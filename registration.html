@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+max-width: 400px;
+margin: 0 auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+margin-top: 50px; /* changed from 100px */
+text-align: center;
+}
+
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ffe6e6; / Light pink background color /
+}
+
+input[type="submit"] {
+    background-color: #ff99cc; / Pink color /
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff80bf; / Darker pink color on hover /
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.container:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #ffb3d1, #ff9999); / Light pink gradient /
+    border-radius: 10px 10px 0 0;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <form action="">       
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" >
+            
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" >
+
+            <label for="password">Confirm Password:</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" >
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" >
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" id="fullname" >
+
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" >
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+
+</html>
